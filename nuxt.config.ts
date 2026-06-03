@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   },
   modules: ['@tresjs/nuxt'],
   app: {
+    baseURL: '/portfolio/',
     head: {
       script: [
         {
