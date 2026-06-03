@@ -4,6 +4,7 @@ import * as THREE from 'three'
 import gsap from 'gsap'
 import type { OrbitalItemData } from '~/data/orbitalItems'
 import { useSharedOrbitalNavigation } from '~/composables/useSharedOrbitalNavigation'
+import { useAsset } from '~/composables/useAsset'
 
 const props = defineProps<{
   item: OrbitalItemData
@@ -28,6 +29,9 @@ const activationEmissiveBoost = ref(0)
 
 // Computed: check if this item is currently active
 const isActive = computed(() => nav.activeItem.value?.id === props.item.id)
+
+// Resolve image URL synchronously to ensure Nuxt context is available
+const imageUrl = useAsset(`/images/${props.item.id}.jpg`)
 
 /**
  * Handle item activation with animation feedback
@@ -245,7 +249,7 @@ onMounted(() => {
   }
   
   // Trigger image load
-  img.src = `/images/${props.item.id}.jpg`  // Reference your image file
+  img.src = imageUrl  // Reference your image file
 
   // Set up activation listeners
   setupKeyboardListener()

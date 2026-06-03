@@ -1,3 +1,4 @@
+import { useAsset } from '~/composables/useAsset'
 import { orbitalItemsBase } from '~/data/orbitalItems'
 
 export const SCENE_BACKGROUND = '/images/bg2.png'
@@ -9,6 +10,6 @@ export const FONT_AWESOME_HREF =
 
 /** Critical images for preload pipeline (deduplicated). */
 export function getCriticalImageUrls(): string[] {
-  const itemImages = orbitalItemsBase.map((item) => `/images/${item.id}.jpg`)
-  return [SCENE_BACKGROUND, ...new Set(itemImages)]
+  const itemImages = orbitalItemsBase.map((item) => useAsset(`/images/${item.id}.jpg`))
+  return [useAsset(SCENE_BACKGROUND), ...new Set(itemImages)]
 }

@@ -3,11 +3,12 @@ import { watchEffect, onMounted, onUnmounted, ref } from 'vue'
 import * as THREE from 'three'
 import { useTres, useLoader } from '@tresjs/core'
 import { SCENE_BACKGROUND } from '~/config/criticalAssets'
+import { useAsset } from '~/composables/useAsset'
 
 const WEBGL_GATE_ID = 'webgl-scene'
 
 const { scene } = useTres()
-const { state: texture } = useLoader(THREE.TextureLoader, SCENE_BACKGROUND)
+const { state: texture } = useLoader(THREE.TextureLoader, useAsset(SCENE_BACKGROUND))
 
 const loader = useAppLoader()
 const resolveWebGLGate = ref<(() => void) | null>(null)
