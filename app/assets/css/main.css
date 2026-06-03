@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Rajdhani:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@import "./loading.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #e0efe5;
+  font-family: 'Rajdhani', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent touch scroll on mobile */
+body {
+  touch-action: pan-y;
+  overscroll-behavior: none;
+}
+
+/* Canvas performance */
+canvas {
+  display: block;
+  outline: none;
+}
+
+/* Selection color matching theme */
+::selection {
+  background-color: rgba(0, 255, 128, 0.2);
+  color: #e0efe5;
+}
+
+/* Scrollbar styling (if any overflow occurs) */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050706;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 128, 0.2);
+  border-radius: 2px;
+}
