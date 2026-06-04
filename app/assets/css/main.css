@@ -10,7 +10,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -34,7 +35,7 @@ canvas {
 
 /* Selection color matching theme */
 ::selection {
-  background-color: rgba(0, 255, 128, 0.2);
+  background-color: rgba(19, 52, 109, 0.212);
   color: #e0efe5;
 }
 

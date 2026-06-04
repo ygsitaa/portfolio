@@ -134,8 +134,8 @@ function setLocale(next: Locale) {
   letter-spacing: 0.12em;
   margin: 0;
   text-shadow:
-    0 0 40px rgba(0, 255, 128, 0.3),
-    0 0 80px rgba(0, 255, 128, 0.1);
+    0 0 40px rgb(19, 52, 109),
+    0 0 80px rgb(15, 45, 99);
   text-transform: uppercase;
 }
 
