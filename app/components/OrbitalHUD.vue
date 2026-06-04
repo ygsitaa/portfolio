@@ -368,4 +368,11 @@ function setLocale(next: Locale) {
     padding-bottom: 4vh;
   }
 }
+
+@media (max-width: 749px) {
+  .lang-switcher {
+    top: 12%;
+    right: 42%;
+  }
+}
 </style>

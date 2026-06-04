@@ -77,7 +77,7 @@ const aboutContent: Record<Locale, AboutContent> = {
     },
     contactValues: {
       email: 'daniel.hodiamont@gmail.com',
-      linkedin: 'linkedin.com/in/yourprofile',
+      linkedin: 'linkedin.com/in/daniel-hodiamont',
       instagram: 'instagram.com/ygsitaa',
     },
   },
@@ -99,7 +99,7 @@ const aboutContent: Record<Locale, AboutContent> = {
     },
     contactValues: {
       email: 'daniel.hodiamont@gmail.com',
-      linkedin: 'linkedin.com/in/yourprofile',
+      linkedin: 'linkedin.com/in/daniel-hodiamont',
       instagram: 'instagram.com/ygsitaa',
     },
   },

@@ -25,7 +25,7 @@ export type OrbitalItemData = OrbitalAboutItem | OrbitalProjectItem
 export const orbitalItemsBase = [
   {
     id: 'about',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '📖',
     selfRotationSpeed: 1,
@@ -33,7 +33,7 @@ export const orbitalItemsBase = [
   },
   {
     id: 'project1',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '🏛️',
     selfRotationSpeed: 1,
@@ -43,7 +43,7 @@ export const orbitalItemsBase = [
   },
   {
     id: 'project2',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '💾',
     selfRotationSpeed: 1,
@@ -53,7 +53,7 @@ export const orbitalItemsBase = [
   },
   {
     id: 'project3',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '🔑',
     selfRotationSpeed: 1,
@@ -63,7 +63,7 @@ export const orbitalItemsBase = [
   },
   {
     id: 'project4',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '🔑',
     selfRotationSpeed: 1,
@@ -73,7 +73,7 @@ export const orbitalItemsBase = [
   },
   {
     id: 'project5',
-    color: '#c084fc',
+    color: '#13346d',
     emissiveColor: '#fff',
     iconEmoji: '🔑',
     selfRotationSpeed: 1,

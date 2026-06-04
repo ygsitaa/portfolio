@@ -127,7 +127,7 @@ onUnmounted(() => {
           @click="handleClose"
           aria-label="Close portal"
         >
-          ✕
+          <span class="pt-px!">✕</span>
         </button>
 
         <!-- Content slot -->
@@ -166,8 +166,8 @@ onUnmounted(() => {
 
 .portal-modal {
   position: relative;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  border: 1px solid rgba(192, 132, 252, 0.3);
+  background: linear-gradient(135deg, #172a57 0%, #0a1931 60%);
+  border: 1px solid rgba(132, 150, 252, 0.3);
   border-radius: 12px;
   padding: 40px;
   max-width: 600px;

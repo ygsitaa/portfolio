@@ -1,5 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 
+const baseURL = '/portfolio/'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -12,7 +14,7 @@ export default defineNuxtConfig({
   },
   modules: ['@tresjs/nuxt'],
   app: {
-    baseURL: '/portfolio/',
+    baseURL,
     head: {
       title: 'Portfolio - Daniel Hodiamont',
       script: [
@@ -30,17 +32,17 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: "image/x-icon",
-          href: '/favicon-v2.ico'
+          href: `${baseURL}favicon-v2.ico`
         },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
-          href: '/apple-touch-icon.png',
+          href: `${baseURL}apple-touch-icon.png`,
           type: 'image/png'
         },
         {
           rel: 'manifest',
-          href: '/site.webmanifest'
+          href: `${baseURL}site.webmanifest`
         },
       ]
     }
