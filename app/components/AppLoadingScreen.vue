@@ -111,7 +111,7 @@ onMounted(() => {
   inset: 0;
   background: radial-gradient(
     ellipse 70% 50% at 50% 45%,
-    rgba(0, 255, 128, 0.08) 0%,
+    rgba(19, 52, 109, 0.212),
     transparent 70%
   );
   pointer-events: none;
@@ -140,8 +140,8 @@ onMounted(() => {
   margin: 0;
   text-transform: uppercase;
   text-shadow:
-    0 0 40px rgba(0, 255, 128, 0.25),
-    0 0 80px rgba(0, 255, 128, 0.08);
+    0 0 40px rgba(168, 168, 168, 0.25),
+    0 0 80px rgba(158, 158, 158, 0.089);
 }
 
 .app-loading-screen__tagline {
