@@ -86,12 +86,12 @@ function setLocale(next: Locale) {
             <span>{{ aboutContent.contactLabels.email }} {{ aboutContent.contactValues.email }}</span>
           </li>
           <li>
-            <i class="fa-brands fa-square-linkedin"></i>
-            <span>{{ aboutContent.contactLabels.linkedin }} {{ aboutContent.contactValues.linkedin }}</span>
-          </li>
-          <li>
             <i class="fa-brands fa-square-instagram"></i>
             <span>{{ aboutContent.contactLabels.instagram }} {{ aboutContent.contactValues.instagram }}</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-linkedin"></i>
+            <span>{{ aboutContent.contactLabels.linkedin }} {{ aboutContent.contactValues.linkedin }}</span>
           </li>
         </ul>
       </div>
@@ -134,8 +134,8 @@ function setLocale(next: Locale) {
   letter-spacing: 0.12em;
   margin: 0;
   text-shadow:
-    0 0 40px rgb(19, 52, 109),
-    0 0 80px rgb(15, 45, 99);
+    0 0 40px #040F2D,
+    0 0 80px #0f2d63;
   text-transform: uppercase;
 }
 
@@ -143,10 +143,11 @@ function setLocale(next: Locale) {
   font-family: 'Rajdhani', sans-serif;
   font-size: clamp(0.85rem, 1.8vw, 1.3rem);
   font-weight: 300;
-  color: rgba(224, 239, 229, 0.45);
+  color: rgba(255, 255, 255, 0.849);
   letter-spacing: 0.3em;
   margin: 0;
   text-transform: uppercase;
+  /* -webkit-text-stroke: 0.2px white; */
 }
 
 .scene-container {

@@ -228,7 +228,7 @@ function setLocale(next: Locale) {
   font-family: 'Rajdhani', sans-serif;
   font-size: clamp(0.85rem, 1.5vw, 1.1rem);
   font-weight: 300;
-  color: rgba(224, 239, 229, 0.502);
+  color: rgba(255, 255, 255, 0.849);
   letter-spacing: 0.15em;
   margin: 0.5rem 0 0;
   text-transform: uppercase;
@@ -243,19 +243,20 @@ function setLocale(next: Locale) {
   font-family: 'Rajdhani', sans-serif;
   font-size: clamp(0.7rem, 1.2vw, 0.9rem);
   font-weight: 400;
-  color: rgba(224, 239, 229, 0.35);
+  color: rgba(255, 255, 255, 0.849);
   letter-spacing: 0.2em;
   text-transform: none;
   display: flex;
   flex-direction: column;
   text-align: center;
+  /* -webkit-text-stroke: 0.2px white; */
 }
 
 .nav-hints__text_mobile {
   font-family: 'Rajdhani', sans-serif;
   font-size: clamp(0.7rem, 1.2vw, 0.9rem);
   font-weight: 400;
-  color: rgba(224, 239, 229, 0.35);
+  color: rgba(255, 255, 255, 0.849);
   letter-spacing: 0.2em;
   text-transform: none;
   display: none;
@@ -280,12 +281,14 @@ function setLocale(next: Locale) {
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.15em;
-  color: rgba(0, 255, 128, 0.45);
+  color: #fff;
   background: none;
   border: none;
   padding: 0.15rem 0.25rem;
   cursor: pointer;
   transition: color 0.2s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .lang-switcher__btn:hover {
@@ -293,9 +296,8 @@ function setLocale(next: Locale) {
 }
 
 .lang-switcher__btn--active {
-  color: #fff;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: rgba(0, 255, 128, 0.45);
+  
   cursor: default;
 }
 
