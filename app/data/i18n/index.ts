@@ -45,16 +45,16 @@ type OrbitalTranslation = OrbitalAboutTranslation | OrbitalProjectTranslation
 
 const navHints: Record<Locale, NavHints> = {
   en: {
-    desktopLine1: '<  Navigate through side arrows, Left/Right Keys or Scrolling  >',
-    desktopLine2: '- Press Enter or Left Click to Open -',
+    desktopLine1: '<  Navigate through side arrows, Arrow Keyboard Keys, Mouse Scrolling/Left-click or swipe  >',
+    desktopLine2: '- Press Enter, Touch or Left Click to Open -',
     mobileLine1: '<  Navigate by swiping or through side arrows  >',
-    mobileLine2: '- Tap to Open -',
+    mobileLine2: '- Touch to Open -',
   },
   fr: {
-    desktopLine1: '<  Naviguez avec les flèches latérales, les touches directionnelles du clavier ou la molette de votre souris  >',
-    desktopLine2: '- Appuyez sur Entrée ou cliquez pour ouvrir -',
+    desktopLine1: '<  Naviguez avec les flèches latérales, les touches directionnelles du clavier, la molette de votre souris/clic gauche ou glissez >',
+    desktopLine2: '- Appuyez sur Entrée, touchez ou cliquez pour ouvrir -',
     mobileLine1: '<  Naviguez en glissant ou avec les flèches latérales  >',
-    mobileLine2: '- Appuyez pour ouvrir -',
+    mobileLine2: '- Touchez pour ouvrir -',
   },
 }
 

@@ -106,6 +106,8 @@ function setupClickListener() {
   const handleClick = () => {
     if (isActive.value) {
       handleActivation()
+    } else {
+      nav.navigateTo(props.index)
     }
   }
 

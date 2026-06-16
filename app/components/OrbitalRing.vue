@@ -79,6 +79,7 @@ defineExpose({
   activeItem: nav.activeItem,
   navigateNext: nav.navigateNext,
   navigatePrev: nav.navigatePrev,
+  navigateTo: nav.navigateTo,
 })
 </script>
 

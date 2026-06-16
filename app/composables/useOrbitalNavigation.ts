@@ -102,6 +102,24 @@ export function useOrbitalNavigation(
     isAnimating.value = true
   }
 
+  function navigateTo(index: number) {
+    if (isAnimating.value || index === activeIndex.value) return
+    
+    let diff = index - activeIndex.value
+    const halfCount = itemCount / 2
+    
+    // Adjust diff for wrap-around to find shortest path
+    if (diff > halfCount) {
+      diff -= itemCount
+    } else if (diff < -halfCount) {
+      diff += itemCount
+    }
+
+    activeIndex.value = index
+    targetRotation.value -= diff * angleStep
+    isAnimating.value = true
+  }
+
   function finishAnimation() {
     isAnimating.value = false
   }
@@ -128,6 +146,7 @@ export function useOrbitalNavigation(
     
     navigateNext,
     navigatePrev,
+    navigateTo,
     finishAnimation,
   }
 }

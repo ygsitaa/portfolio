@@ -25,6 +25,7 @@ export interface OrbitalNavigationAPI {
   getContinuousEmissive: (angle: number) => number
   navigateNext: () => void
   navigatePrev: () => void
+  navigateTo: (index: number) => void
   finishAnimation: () => void
 }
 
