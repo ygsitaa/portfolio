@@ -369,6 +369,10 @@ function setLocale(next: Locale) {
   .orbital-hud {
     padding-bottom: 4vh;
   }
+
+  .nav-hints {
+    margin-bottom: 2vh;
+  }
 }
 
 @media (max-width: 749px) {
