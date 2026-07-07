@@ -51,5 +51,15 @@ export const orbitalItemsBase = [
     url: 'https://web-intheskyy.vercel.app/',
     image: 'project2.jpg',
   },
+  {
+    id: 'project3',
+    color: '#13346d',
+    emissiveColor: '#fff',
+    iconEmoji: '💾',
+    selfRotationSpeed: 1,
+    type: 'project' as const,
+    url: 'https://ygsitaa.github.io/web-vinciane/',
+    image: 'project3.jpg',
+  }
 
 ]

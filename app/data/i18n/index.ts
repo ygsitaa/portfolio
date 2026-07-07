@@ -118,6 +118,11 @@ const orbitalTranslations: Record<Locale, Record<string, OrbitalTranslation>> = 
       subtitle: 'Interactive weather website',
       description: '',
     },
+    project3: {
+      label: 'Vinciane H.',
+      subtitle: 'Bibliography - ADHD books for kids',
+      description: '',
+    },
   },
   fr: {
     about: { label: 'À PROPOS', subtitle: 'Qui suis-je ?' },
@@ -129,6 +134,11 @@ const orbitalTranslations: Record<Locale, Record<string, OrbitalTranslation>> = 
     project2: {
       label: 'Inthesky',
       subtitle: 'Site internet avec météo intéractive',
+      description: '',
+    },
+    project3: {
+      label: 'Vinciane H.',
+      subtitle: 'Bibliographie - livres TDAH pour enfants',
       description: '',
     },
   },
